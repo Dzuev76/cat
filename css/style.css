@@ -1,55 +1,60 @@
-.navbar-light .navbar-nav .nav-link.blog {
-  border: 1px solid white;
+@charset "UTF-8";
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
 }
-
-.navbar-light .navbar-nav .nav-link.gallery {
-  border: 1px solid white;
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
 }
-
-.block {
-  background-color: white;
-  padding: 1rem;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  z-index: 2;
-  bottom: 200px;
-  width: 300px;
-  left: 510px;
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
 }
-
-.navbar-light .navbar-nav .nav-link.subscribe {
-  border: 1px solid white;
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
 }
+@media (max-width: 575px) {
+  .carousel {
+    margin-top: 0 !important;
+  }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: white;
-  border: none;
+  .navbar-light .navbar-nav .nav-link {
+    color: black !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.blog, .navbar-light .navbar-nav .nav-link.gallery, .navbar-light .navbar-nav .nav-link.subscribe, .navbar-light .navbar-nav .nav-link.about {
+    color: black !important;
+  }
+
+  .navbar-expand-sm {
+    background-image: url(../img/cat-bg.jpg);
+    background-position: top;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
 }
-
-.navbar-light .navbar-nav .nav-link.about {
-  border: 1px solid white;
-}
-
 .nav-item {
-  text-transform: uppercase;
   position: relative;
   z-index: 1;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
-  margin: 0px 25px;
-  text-align: center;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: white;
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.blog, .navbar-light .navbar-nav .nav-link.gallery, .navbar-light .navbar-nav .nav-link.subscribe, .navbar-light .navbar-nav .nav-link.about {
   border: 1px solid white;
+  color: white;
 }
 
-.carousel-inner {
-  margin-top: -60px;
+.carousel {
+  margin-top: -70px;
   position: relative;
   z-index: 0;
 }
@@ -62,37 +67,15 @@
   opacity: .7;
 }
 
-h1 {
-  margin-bottom: 200px;
-}
-
-@media only screen and (max-width: 670px) {
-  .nav-item {
-    font-size: .7rem;
-  }
-
-  h1 {
-    margin-bottom: 40px;
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .carousel-inner {
-    margin-top: 0px;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    color: black;
-  }
-
-  .navbar-light .navbar-nav .nav-link.active {
-    color: black;
-  }
-
-  .navbar-expand-sm {
-    background-image: url(../img/cat-bg.jpg);
-    background-position: top;
-  }
-}
+/*.block {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 2;
+  bottom: 200px;
+  left: 510px;
+  width: 300px;
+}*/
 
 /*# sourceMappingURL=style.css.map */

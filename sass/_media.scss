@@ -1,0 +1,40 @@
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+}
+@media (max-width: 575px) {
+  .carousel {
+    margin-top: 0 !important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black !important;
+  }
+  .navbar-light .navbar-nav .nav-link.active  {
+    color: black !important;
+  }
+  .navbar-expand-sm {
+    background-image: url(../img/cat-bg.jpg);
+    background-position: top;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+}

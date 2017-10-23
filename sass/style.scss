@@ -1,5 +1,49 @@
-@import'blog';
-@import'gallery';
-@import'subscribe';
-@import'about';
-@import'home';
+@import'media';
+$border: 1px solid white;
+$colorW:white;
+$colorB:black;
+
+.nav-item {
+  position: relative;
+  z-index: 1;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $colorW;
+}
+.navbar-light .navbar-nav .nav-link.active  {
+  border: $border;
+  color: $colorW;
+}
+.navbar-light .navbar-nav .nav-link.blog {
+  @extend.nav-link.active;
+}
+.navbar-light .navbar-nav .nav-link.gallery {
+  @extend.nav-link.active;
+}
+.navbar-light .navbar-nav .nav-link.subscribe {
+  @extend.nav-link.active;
+}
+.navbar-light .navbar-nav .nav-link.about {
+  @extend.nav-link.active;
+}
+.carousel {
+  margin-top: -70px;
+  position: relative;
+  z-index: 0;
+}
+.navbar-toggler {
+  font-size: .5rem;
+}
+.carousel-item > img {
+  opacity: .7;
+}
+/*.block {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 2;
+  bottom: 200px;
+  left: 510px;
+  width: 300px;
+}*/
