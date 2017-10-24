@@ -67,6 +67,10 @@
   opacity: .7;
 }
 
+.blockquote {
+  color: white;
+}
+
 /*.block {
   background-color: white;
   padding: 1rem;
